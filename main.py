@@ -25,10 +25,10 @@ app.add_middleware(
 
 @app.get('/home_api/')
 def home_api():
-    dt = datetime.datetime.now()
+    dt = datetime.now()
     localtime = dt.astimezone (pytz.timezone('America/Guayaquil'))
     localtime = localtime.strftime ("%Y-%m-%d")
-    return {"message": "Hello PanchisioApi", "Job":"Is Work...!", "Time":datetime.datetime.now(),
+    return {"message": "Hello PanchisioApi", "Job":"Is Work...!", "Time":datetime.now(),
             "Endpoints":[
                 "====",
                 "== REVISIONES MAÑANA ==",
@@ -446,3 +446,6 @@ async def detalle_diario(company_name: str, fecha: str, timer: int):
     data_ = get_defaul_xss_data(company_single(name=company_name.upper()), documentos_entregas_tiempo_excedido(fecha, timer))
     data = custom_transform(data_)
     return data
+
+
+ 
