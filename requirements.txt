@@ -2,3 +2,5 @@
 fastapi
 uvicorn
 pytz
+requests
+supabase
