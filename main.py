@@ -7,7 +7,7 @@ from core.company import company_directa, company_list_DZ, company_list_grupo_1,
 from core.controller import get_defaul_xss_data
 from core.helpers import custom_transform
 from core.query import documentos_entregas_tiempo_excedido, documentos_ventas_tiempo_excedido, query_GDD_report, query_catalogo_solo_dz, query_catalogo_solo_pronaca, query_clave_usuario, query_clientes_nuevos, query_clientes_nuevos_ruta, query_cobros_diarios, query_cobros_diarios_no_ruta_fecha, query_cobros_diarios_si_procesados, query_cobros_diarios_si_ruta_fecha, query_detalle_cliente_nuevo_pedido, query_detalle_devolucion_cliente_fecha, query_detalle_diario, query_detalle_diario_por_rutas, query_detalle_pedido_cliente_fecha, query_detalle_pedido_directa, query_detalle_pedido_dmd_code, query_general_dia, query_informacion_entrega, query_licencias_activas, query_matriz_gdd_pollo_blanco, query_matriz_gdd_pollo_criollo, query_retornos, query_retornos_no_procesados_ruta_fecha, query_retornos_si_procesados_ruta_fecha, query_rev_day, query_rev_dia_directa, query_rutas_por_sincronizar, query_sincronizacion_rutas, query_sincronizo_mas_de_una_vez, query_solo_stock_dz_dia, query_status_total_parcial_10_min, query_stock_dz, query_ultimos_pedidos
-from core.constantes import const
+import core.constantes as const
 
 
 # Crea una instancia de la aplicación FastAPI
