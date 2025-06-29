@@ -136,7 +136,8 @@ async def stock_grupo_1():
 
 @app.get('/home_api/matriz_pollo_blanco_grupo_1')
 async def matriz_pollo_blanco_grupo_1():
-    data = get_defaul_xss_data(company_list_grupo_1(), query_matriz_gdd_pollo_blanco())
+    data_ = get_defaul_xss_data(company_list_grupo_1(), query_matriz_gdd_pollo_blanco())
+    data = custom_transform(data_)
     return data
 
 @app.get('/home_api/matriz_pollo_criollo_grupo_1')
@@ -288,7 +289,9 @@ async def gdd_report_company(company_name: str, date: str):
 
 @app.get('/home_api/licencias_activas')
 async def licencias_activas():
-    return get_defaul_xss_data(company_list_DZ(), query_licencias_activas())
+    data_ = get_defaul_xss_data(company_list_DZ(), query_licencias_activas())
+    data = custom_transform(data_)
+    return data
 
 
 @app.get('/home_api/usuario_clave/{company_name}/{ruta}')

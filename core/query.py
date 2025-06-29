@@ -368,7 +368,7 @@ def query_catalogo(item):
 def query_licencias_activas():
     return [
         {
-            "query":"select top 1000 count(*) REGISTROS \
+            "query":"select top 1000 DB_NAME() as DZ_Regional, count(*) REGISTROS \
                     from company c \
                     inner join \
                     companyBranch cb on c.comCode=cb.comCode \
