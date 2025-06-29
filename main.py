@@ -228,7 +228,7 @@ async def stock_solo_grupo_3():
 
 
 #DIRECTA
-@app.get('/home_api/stock_directa/')
+@app.get('/home_api/stock_directa')
 async def stock_directa():
     return get_defaul_xss_data(company_directa(), query_rev_dia_directa())
 
