@@ -1,1 +1,1 @@
-HOST = "https://weak-retha-panchisio-dev-87-352403d1.koyeb.app"
+HOST = "https://elderly-robinette-sweeticepower-c2cc75be.koyeb.app"
